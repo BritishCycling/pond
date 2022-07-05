@@ -1103,9 +1103,9 @@ declare module "pondjs" {
              * }
              */
         events():
-            | Enumerator<Event>
-            | Enumerator<TimeRangeEvent>
-            | Enumerator<IndexedEvent>;
+            | Generator<Event>
+            | Generator<TimeRangeEvent>
+            | Generator<IndexedEvent>;
 
         /**
              * Sets a new underlying collection for this TimeSeries.
